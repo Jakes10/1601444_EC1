@@ -10,7 +10,7 @@
 namespace _1601444_EC1 {
     
     
-    public partial class Welcome {
+    public partial class Contact {
         
         /// <summary>
         /// form1 control.
