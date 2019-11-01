@@ -10,7 +10,7 @@
 namespace _1601444_EC1 {
     
     
-    public partial class Welcome {
+    public partial class AdminPage {
         
         /// <summary>
         /// form1 control.
@@ -22,21 +22,12 @@ namespace _1601444_EC1 {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Image2 control.
+        /// Image1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image2;
-        
-        /// <summary>
-        /// greeting control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label greeting;
+        protected global::System.Web.UI.WebControls.Image Image1;
     }
 }

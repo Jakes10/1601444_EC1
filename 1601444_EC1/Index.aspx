@@ -13,10 +13,7 @@
 
 
     <style type="text/css">
-        .auto-style1 {
-            width: 100%;
-        }
-
+        
         .page-footer {
             margin-top: 300px;
             background-color: rgba(0, 0, 0, 0.3);
@@ -56,28 +53,6 @@
             margin-top: 40px;
         }
 
-        .auto-style2 {
-            font-size: x-large;
-        }
-
-        .auto-style3 {
-            width: 100%;
-        }
-
-        .auto-style6 {
-            height: 22px;
-            text-align: left;
-            background-color: #f3f3f3;
-        }
-
-        .auto-style8 {
-            text-align: left;
-        }
-
-        .auto-style10 {
-            width: 89px;
-        }
-
         .auto-style11 {
             display: inline-block;
             padding-top: .3125rem;
@@ -90,19 +65,19 @@
             height: 37px;
         }
 
-        .auto-style12 {
-            font-size: medium;
+        .auto-style13 {
+            left: 0px;
+            top: 0px;
         }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
             <div>
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+             <%--   <nav class="auto-style13">
                     <a class="auto-style11" href="/Index.aspx">
                         <asp:Image ID="Image1" runat="server" Height="44px" ImageUrl="~/Images/logo.png" Width="183px" />
                     </a>
-
 
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -130,12 +105,58 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/Register.aspx">Register</a>
                             </li>
+                               <li class="nav-item">
+                                <a class="nav-link" href="/Login.aspx">Login</a>
+                            </li>
                         </ul>
 
                     </div>
+                </nav>--%>
+                  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="auto-style11" href="/Index.aspx">
+                        <asp:Image ID="Image2" runat="server" Height="44px" ImageUrl="~/Images/logo.png" Width="183px" />
+                         </a>
+                        
+                   
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                         
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item active">
+                                <a class="nav-link" href="/Index.aspx">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                           
+                             <li class="nav-item">
+                                <a class="nav-link" href="/Products.aspx">Products</a>
+                            </li>
+
+                             <li class="nav-item">
+                                <a class="nav-link" href="/About.aspx">About Us</a>
+                            </li>
+
+                             <li class="nav-item">
+                                <a class="nav-link" href="/Contact.aspx">Contact Us</a>
+                            </li>
+
+                             <li class="nav-item">
+                                <a class="nav-link" href="/Register.aspx">Register</a>
+                            </li>
+
+                              <li class="nav-item">
+                                <a class="nav-link" href="/Login.aspx">Login</a>
+                            </li>
+                        </ul>
+                     
+                    </div>
+                   
                 </nav>
             </div>
-       
+      <div>
+           <asp:Label ID="greeting" runat="server" Text=""></asp:Label>
+       </div>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>

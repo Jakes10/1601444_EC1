@@ -14,6 +14,11 @@ namespace _1601444_EC1
             //lblName.Text = (string)(Session["name"]);
             //Label1.Text = (string)(Session["fName"])+" "+(string)(Session["lName"]);
             //userAmt.Text = Application["fName"]+" "+ Application["lName"];
+            if ((string)(Session["fName"]) == null)
+            {
+                Response.Redirect("/Login.aspx");
+            }
+           greeting.Text = "Welcome "+(string)(Session["fName"]) + " " + (string)(Session["lName"]);
         }
     }
 }

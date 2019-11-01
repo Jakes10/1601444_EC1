@@ -79,6 +79,8 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/Register.aspx">Register</a>
                         </li>
+
+                         
                     </ul>
                 </div>
             </nav>

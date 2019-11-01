@@ -96,6 +96,10 @@
                              <li class="nav-item active">
                                 <a class="nav-link" href="#">Register<span class="sr-only">(current)</span></a>
                             </li>
+
+                              <li class="nav-item">
+                                <a class="nav-link" href="/Login.aspx">Login</a>
+                            </li>
                         </ul>
                      
                     </div>
@@ -113,32 +117,33 @@
                   <div class="form-group">
 
                     <%--<input type="text" name="first_name" class="form-control" placeholder="First Name" required="required">--%>
-                       <asp:TextBox ID="txtFirstName" runat="server" class="form-control" placeholder="First Name" required="required"></asp:TextBox>
+                       <asp:TextBox ID="txtFirstName" runat="server" class="form-control" placeholder="First Name" required="required">Leathon</asp:TextBox>
                   </div>
     
                 </div>
                 <div class="col-md-6 col-sm-8 col-xs-12 col-md-offset-1 col-sm-offset-2 ">
                   <div class="form-group">
                     <%--<input type="text" name="last_name" class="form-control" placeholder="Last Name" required="required">--%>
-                          <asp:TextBox ID="txtLastName" runat="server"  class="form-control" placeholder="Last Name" required="required"></asp:TextBox>
+                          <asp:TextBox ID="txtLastName" runat="server"  class="form-control" placeholder="Last Name" required="required">Gregory</asp:TextBox>
                   </div> 
                 </div>     
               </div>
               <div class="form-group">
                 <%--<input type="email" name="email" class="form-control" placeholder="Email" required="required">--%>
-                  <asp:TextBox ID="txtEmail" runat="server" TextMode="Email" class="form-control" placeholder="Email" required="required"></asp:TextBox>
+                  <asp:TextBox ID="txtEmail" runat="server" TextMode="Email" class="form-control" placeholder="Email" required="required">leathongregory@gmail.com</asp:TextBox>
               </div>
                 <div class="form-group">
                 <%--<input type="date" name="dob">--%>
-                   <asp:TextBox ID="txtDOB" runat="server" TextMode="Date"  class="form-control" placeholder="DOB" required="required"  ></asp:TextBox>
+                   <asp:TextBox ID="txtDOB" runat="server" TextMode="Date"  class="form-control" placeholder="DOB" required="required"></asp:TextBox>
                      
                     </div>
+                
                 <div class=" form-group">
                      <asp:RangeValidator class="collapse" ID="RangeValidator1" runat="server" data-toggle="collapse" ControlToValidate="txtDOB" ErrorMessage="Must be older than 18 years old." ForeColor="#CC3300" MaximumValue="2001-09-01" MinimumValue="1960-01-01"></asp:RangeValidator>
                 </div>
                 <div class="form-group">
                 <%--<input type="number" name="mobile" >--%>
-                          <asp:TextBox ID="txtMobile" runat="server" TextMode="Number" class="form-control" placeholder="Phone Number" required="required"></asp:TextBox>
+                          <asp:TextBox ID="txtMobile" runat="server" TextMode="Number" class="form-control" placeholder="Phone Number" required="required">8503478961</asp:TextBox>
               </div>
                 <%--<div class="collapse form-group">
                      <asp:RegularExpressionValidator  ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtMobile" ErrorMessage="Invalid mobile number" CssClass="auto-style9" ValidationExpression="((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}"></asp:RegularExpressionValidator>
@@ -169,6 +174,7 @@
                     <asp:Button ID="btnSubmit" class="btn btn-block btn-lg"  runat="server" Text="Register" OnClick="Button1_Click" data-toggle="collapse" data-target=".collapse" />
                          
                       </div>
+                    
                 </div>
                <%-- <div class="col-md-6 col-xs-12">
                   <div class="form-group">
